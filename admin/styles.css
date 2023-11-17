@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    transition: all 0.3s;
+}
+
+body{
+	background: url('../images/simon_paulin-stockholm_public_library-4631.jpg-992x.webp') no-repeat;
+	background-color: cyan;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.nav{
+	background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 3% 5%;
+	height: 70vh;
+}
+
+.side-menu{
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin-bottom: 50px;
+}
+
+.side-menu a{
+	text-decoration: none;
+	background-color: rgb(20, 5, 20);
+	box-shadow: 0 0 10px white;
+	border-radius: 10px;
+	padding: 10px 15px	;
+	font-size: 20px;
+	color: gray;
+}
+
+.side-menu a:hover, .side-menu .active{
+	background-color: black;
+	box-shadow: 0 0 15px white,  0 0 15px white;
+	color: white;
+}
+
+.menu-result{
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 10px white;
+	width: 90%;
+	height: 90%;
+	border-radius: 25px;
+	padding: 3%;
+	text-align: center;
+	overflow: auto;
+}
+
+.menu-result .name{
+	font-size: 50px;
+	color: gold;
+	text-transform: uppercase;
+	background-color: gray;
+	width: fit-content;
+	margin: auto;
+	padding: 0 15px;
+	border-radius: 10px;
+}
+
+
+.bookList{
+	position: relative;
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: 95%;
+	/* overflow: auto; */
+}
+
+.book{
+	position: relative;
+	margin: 3% 10px;
+}
+
+.book img{
+	height: 150px;
+	box-shadow: 0 0 5px white;
+	border-radius: 5px;
+}
+
+.book p{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.bookForm form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
+}
+
+
+.bookForm form input{
+	width: 60%;
+	margin: 15px auto;
+	font-size: 20px;
+	padding: 10px 0;
+	padding-left: 10px;
+	color: black;
+}
+
+.bookForm form input[type=file]{
+	display: none;
+}
+
+
+.bookForm form label{
+	width: 40%;
+	margin: 15px auto;
+	font-size: 20px;
+	border: 5px dashed gray;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+.bookForm form input[type=submit]{
+	background-color: gray;
+	width: max-content;
+	padding: 10px 20px;
+
+}
+
+table{
+	margin: auto;
+}
+th,td{
+	border: 1px solid wheat;
+}
+td,th{
+	font-size: 20px;
+	padding: 10px;
+}
+.issue form{
+	display: flex;
+	flex-direction: column;
+}
+
+.issue form select{
+	background-color: gray;
+	margin: 10px auto;
+	width: 40%;
+	padding: 10px;
+}

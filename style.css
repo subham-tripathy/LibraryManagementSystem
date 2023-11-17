@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    transition: all 0.3s;
+}
+
+body{
+    font-family: sans-serif;
+    background: url('./images/3346779.webp') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.nav{
+    padding: 1.5%;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px black;
+}
+
+.nav h1{
+    text-shadow: 0 0 15px black, 0 0 15px black, 0 0 15px black;
+}
+
+.signUpSignIn{
+    background-color: rgb(0, 0, 0, 0.75);
+    box-shadow: 0 0 50px black, 0 0 50px black;
+    text-align: center;
+    padding: 6% 2%;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 25px;
+}
+
+.signUp{
+    display: none
+}
+
+.signUp form, .signIn form{
+    position: relative;
+}
+
+.signUp form div, .signIn form div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% auto;
+    padding: 0 10%;
+}
+
+.signUp form div input, .signIn form div input{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.signUp form div label, .signIn form div label{
+    font-size: 25px;
+}
+
+.signUpbtn, .signInbtn{
+    color: orange;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    margin:  auto 50px;
+    cursor: pointer;
+    padding: 1% 2%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* .signUpbtn:hover, .signInbtn:hover, .signUpSignIn .active{
+    background-color: gray;
+    color: gold;
+} */
+
+.signIn, .signUp{
+    margin-top: 50px;
+}
+
+.signUpSubmit, .signInSubmit{
+    height: 35px;
+    width: 100px;
+    border: 1px solid white;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.55);
+    color: gold;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signUpSubmit:hover, .signInSubmit:hover{
+    background-color: rgba(128, 128, 128, 1);
+}
