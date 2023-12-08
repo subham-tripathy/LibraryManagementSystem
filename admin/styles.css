@@ -160,3 +160,13 @@ td,th{
 	width: 40%;
 	padding: 10px;
 }
+
+#searchBooks{
+	position: absolute;
+	left: 5%;
+	top: 2%;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 20px;
+	color: black;
+}

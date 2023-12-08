@@ -87,9 +87,9 @@ if(isset($_POST['signInSubmit'])){
 		$userId = $result['userId'];
 		setcookie("id", $userId, time()+(86400), "/");
 		$password = $result['password'];
-		if($password == $_POST['password'])
+		if($password == $_POST['signInPassword'])
 		{
-			if(strtolower($_POST['userId']) == 'admin'){
+			if(strtolower($_POST['signInUserId']) == 'admin'){
 				setcookie("loginType", 'admin', time() + (86400), "/");
 				setcookie("id", $result['userId'], time() + (86400), "/");
 				echo "<script>

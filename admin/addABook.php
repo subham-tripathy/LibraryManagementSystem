@@ -4,13 +4,6 @@ if (isset($_COOKIE["loginType"])){
 
 
 
-
-
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
